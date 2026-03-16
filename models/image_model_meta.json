@@ -1,0 +1,39 @@
+{
+  "accuracy": 0.9371,
+  "roc_auc": 0.9741,
+  "n_features": 24,
+  "image_size": [
+    128,
+    128
+  ],
+  "n_accident": 369,
+  "n_normal": 422,
+  "feature_names": [
+    "metallic",
+    "red_dominant",
+    "dark",
+    "bright",
+    "sky_blue",
+    "green",
+    "edge_density",
+    "white",
+    "v_contrast",
+    "h_contrast",
+    "center_prom",
+    "sat_mean",
+    "sat_std",
+    "lum_mean",
+    "lum_std",
+    "orange",
+    "gray_road",
+    "quad_var",
+    "blur",
+    "metallic*red",
+    "chaos*non-green",
+    "dark*red",
+    "metallic*edge",
+    "urban_density"
+  ],
+  "use_cv2": true,
+  "trained_on": "D:\\Acc Pred\\data\\train\\Accident"
+}

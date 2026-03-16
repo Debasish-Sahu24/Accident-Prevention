@@ -1,0 +1,20 @@
+{
+  "visual_cols": [
+    "object_count_yolo",
+    "bbox_velocity_variance",
+    "road_density_seg"
+  ],
+  "numerical_cols": [
+    "weather_index",
+    "road_friction",
+    "hour_of_day",
+    "traffic_volume_lag_5min",
+    "is_peak_hour",
+    "is_night",
+    "month_sin",
+    "road_type_enc"
+  ],
+  "fused_dim": 11,
+  "scale_pos_weight": 44.41,
+  "accident_rate": 0.022
+}
