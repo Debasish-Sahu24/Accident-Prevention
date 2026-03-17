@@ -20,7 +20,8 @@ accident_prediction/
 ├── src/
 │   └── pipeline.py                      # core ML classes
 ├── app.py                               # Flask web server + dashboard
-├── train.py                             # training script
+├── train.py                             # numerical training
+|── train_image.py                       # image training script
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
@@ -37,6 +38,14 @@ accident_prediction/
 | `india_realtime_sensor.csv` | 20,000 | junction_id, avg_speed, pedestrian_count, signal_phase, pothole_detected |
 | `india_weather_road_log.csv` | 15,000 | state, rainfall_mm, fog_hours, road_waterlogging, pothole_index |
 | `india_vehicle_driver_profile.csv` | 8,000 | vehicle_type, driver_age, alcohol_detected, fatigue_score, past_accidents |
+
+---
+
+| Image File |
+|------|------|-------------|
+| `data` | Training | Accident | Non-Accident |
+| `data` | Testing | Accident | Non-Accident |
+| `data` | Implementing | Accident | Non-Accident |
 
 ---
 
@@ -124,7 +133,7 @@ print(response.json())
 
 ---
 
-## 🎥 Live Video Inference
+## 🎥 Live Image or Video Inference
 
 ```python
 from src.pipeline import (
