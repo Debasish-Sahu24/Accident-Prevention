@@ -13,6 +13,7 @@ accident_prediction/
 │   ├── india_realtime_sensor.csv        # 20,000 rows — junction sensors
 │   ├── india_weather_road_log.csv       # 15,000 rows — weather/road history
 │   └── india_vehicle_driver_profile.csv #  8,000 rows — driver profiles
+|   ├── Accident & Non-Accident 
 ├── models/                              # saved after training
 │   ├── xgb_accident_model.json
 │   ├── numerical_scaler.pkl
